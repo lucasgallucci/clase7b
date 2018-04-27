@@ -1,0 +1,106 @@
+.ms{
+	display: flex;
+	align-items: center;
+}
+
+.ms ul{
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	max-width: 100px;
+	margin-right: 10px;
+}
+
+.ms ul li{
+	width: 50px;
+	height: 50px;
+	background: red;
+}
+
+.ms ul li:first-child{
+	background: red;
+}
+
+.ms ul li:nth-child(2){
+	background: green;
+}
+
+.ms ul li:nth-child(3){
+	background: blue;
+}
+
+.ms ul li:last-child{
+	background: yellow;
+}
+
+
+.cuadrado:hover{
+	transform: scale(1.2) rotate(40deg);
+	border-radius: 40px;
+	background: red;
+}
+
+@keyframes girar{
+	0%{
+		background: green;
+	}
+
+	25%{
+		background: red;
+		border-radius: 50%;
+		transform: rotate(90deg);
+		transform: translate(300px, -100px);
+	}
+
+	50%{
+		background: pink;
+		transform: scale(4);
+	}
+
+	75%{
+		background: cyan;
+		transform: scale(0.2) translate(-25px, 100px);
+	}
+
+	100%{
+		background: green;
+	}
+}
+
+.cuadrado{
+	display: inline-block;
+	height: 150px;
+	width: 150px;
+	background: green;
+	transition: 0.5s;
+	transition-timing-function: (.11,.91,.93,.23); 
+	animation-name: girar;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+
+}
+
+
+
+.cuadrado2{
+	display: inline-block;
+	height: 150px;
+	width: 150px;
+	background: yellow;
+	animation-name: girar;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
